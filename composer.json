@@ -1,0 +1,29 @@
+{
+    "name": "davidnineroc/laravel-uri-permission",
+    "description": "用户,角色,权限,菜单管理包",
+    "keywords": ["permission", "role", "uri", "user", "manager"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "DavidNineRoc",
+            "email": "1033404553@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DavidNineRoc\\Permission\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.2"
+    }
+}

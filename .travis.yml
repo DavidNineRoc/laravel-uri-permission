@@ -1,0 +1,21 @@
+language: php
+php:
+  - '7.0'
+
+install:
+  - composer install --prefer-dist --optimize-autoloader --no-interaction
+
+notifications:
+  email:
+    recipients:
+      - 1033404553@qq.com
+    on_success: never
+    on_failure: always
+
+before_script:
+  - git --version
+  - php -v
+  - composer --version
+  - phpunit --version
+script:
+  - vendor/bin/phpunit
